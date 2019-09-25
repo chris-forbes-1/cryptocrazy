@@ -6,6 +6,7 @@ Finally it generates a sha512 sum of the cipher text + the signature.
 
 The idea behind this is work out it would be possible to make it as difficult as possible to man in the middle messages being sent. 
 
+> **Make sure to take out all the logging if you plan to make use of this in your projects, it writes things like private keys to the logs**
 
 ### Future Development
 - Make it into a client server application
