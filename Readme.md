@@ -11,4 +11,4 @@ The idea behind this is work out it would be possible to make it as difficult as
 ### Future Development
 - Make it into a client server application
 - Add a shared salt between the client and server
-  - It's probably worth saying that their will just be an assumption that this will all be happening over TLS (this is ghoulish overkill for the sake of overkill)  
+  - It's probably worth saying that their will just be an assumption that this will all be happening over TLS. The point of this project is to try out things to do with crypto and make it as over the top as possible
