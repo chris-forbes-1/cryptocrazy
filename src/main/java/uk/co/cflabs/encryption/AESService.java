@@ -21,7 +21,7 @@ public class AESService
 	private static final Logger logger = LoggerFactory.getLogger(AESService.class);
 	private static final int AES_KEY_SIZE = 256;
 	private static final int GCM_IV_LENGTH = 12;
-	private static final int GCM_TAG_LENGTH = 16;
+	private static final int GCM_TAG_LENGTH = 128;
 	private static final String KEY_SELECTOR = "AES";
 	private static final String CIPHER_SELECTOR = "AES/GCM/NoPadding";
 
