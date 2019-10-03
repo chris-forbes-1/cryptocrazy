@@ -52,7 +52,7 @@ public class AESService
 
 			Cipher cipher = Cipher.getInstance(CIPHER_SELECTOR);
 			SecretKeySpec keySpec = new SecretKeySpec(secretKey.getEncoded(), KEY_SELECTOR);
-			GCMParameterSpec gcmSpec = new GCMParameterSpec(GCM_TAG_LENGTH * 8, initVector);
+			GCMParameterSpec gcmSpec = new GCMParameterSpec(GCM_TAG_LENGTH , initVector);
 			cipher.init(Cipher.ENCRYPT_MODE, keySpec, gcmSpec);
 			byte[] cipherText = cipher.doFinal(message.getBytes());
 			logger.info("Encrypted messaged: [{}]", DatatypeConverter.printHexBinary(cipherText));
